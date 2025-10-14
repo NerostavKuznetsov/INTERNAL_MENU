@@ -10,9 +10,9 @@ namespace NK_ImGui // ( Nerostav Kuznetsov - ImGui )
 	inline bool setup = false;
 
 	// WINAPI related
-	inline HWND Window = nullptr;
-	inline WNDCLASSEX WindowClass = { };
-	inline WNDPROC OriginalWindowProcess = nullptr;
+	inline HWND Window = nullptr; // Temporary window handle
+	inline WNDCLASSEX WindowClass = { }; // Window class structure
+	inline WNDPROC OriginalWindowProcess = nullptr; // Original window process
 
 	// DX stuff
 	inline LPDIRECT3DDEVICE9 device = nullptr;

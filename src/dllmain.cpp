@@ -12,6 +12,8 @@
 * Tudo isso está reunido em alguns arquivos com um manipulador de exceções e mecanismos perfeitos de descarregamento
 * de módulos. Espero que gostem!
 * 
+* Bibliotecas usadas: (ImGui: https://github.com/ocornut/imgui, Hook: https://github.com/TsudaKageyu/minhook) 
+* 
 * [!] Este programa é um software livre: você pode redistribuí-lo e/ou modificá-lo como quiser.
 * 
 */
@@ -46,14 +48,7 @@ BOOL WINAPI DllMain(
 		// ➡️ Isso evita overhead e possíveis deadlocks em alguns casos — boas práticas para  DLLs injetadas :D 
 		DisableThreadLibraryCalls(instance);
 		// ➡️ Cria uma nova thread para rodar a função Setup.
-		const auto thread = CreateThread(
-			nullptr,
-			0,
-			reinterpret_cast<LPTHREAD_START_ROUTINE>(Setup), 
-			instance,
-			0,
-			nullptr
-		);
+		const auto thread = CreateThread(nullptr, 0, reinterpret_cast<LPTHREAD_START_ROUTINE>(Setup), instance, 0, nullptr);
 		if (thread)
 			// ➡️ Fecha o handle da thread (mas não a thread em si — ela continua rodando).
 			// ➡️ Isso é apenas limpeza de recursos.

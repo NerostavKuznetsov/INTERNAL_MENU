@@ -13,27 +13,59 @@ LRESULT CALLBACK WindowProcess(HWND window, UINT message, WPARAM wideParam, LPAR
 
 bool NK_ImGui::SetupWindowClass(const char* WindowClassName) noexcept
 {
+	// Populate window class structure	
+	WindowClass.cbSize = sizeof(WNDCLASSEX);
+	WindowClass.style = CS_HREDRAW | CS_VREDRAW;
+	WindowClass.lpfnWndProc = WindowProcess;
+	WindowClass.cbClsExtra = 0;
+	WindowClass.cbWndExtra = 0;
+	WindowClass.hInstance = GetModuleHandleA(nullptr);
+	WindowClass.hIcon = nullptr;
+	WindowClass.hCursor = nullptr;
+	WindowClass.hbrBackground = nullptr;
+	WindowClass.lpszMenuName = nullptr;
+	WindowClass.lpszClassName = WindowClassName;
+	WindowClass.hIconSm = nullptr;
 
+	// Register class 
+	if (!RegisterClassExA(&WindowClass))
+		return false;
+
+	return true;
 }
 
 void NK_ImGui::DestroyWindowClass() noexcept
 {
-
+	UnregisterClass(WindowClass.lpszClassName, WindowClass.hInstance);
 }
 
 bool NK_ImGui::SetupWindow(const char* WindowName) noexcept
 {
+	// Create temp window
+	Window = CreateWindow(WindowClass.lpszClassName, WindowName, WS_OVERLAPPEDWINDOW, 0, 0, 100, 100, 0, 0, WindowClass.hInstance, 0);
+		if (!Window)
+			return false;
 
+	return true;
 }
 
 void NK_ImGui::DestroyWindow() noexcept
 {
-
+	if (Window)
+		DestroyWindow(Window);
+	
 }
 
 bool NK_ImGui::SetupDirectX() noexcept
 {
+	const auto handle = GetModuleHandleA("d3d9.dll");
 
+	if (!handle)
+		return false;
+
+	using CreateFn = LPDIRECT3D9(__stdcall*)(UINT);
+
+	const auto create = reinterpret_cast<CreateFn>(GetProcAddress(handle, "Direct3DCreate9"));
 }
 
 void NK_ImGui::DestroyDirectX() noexcept
