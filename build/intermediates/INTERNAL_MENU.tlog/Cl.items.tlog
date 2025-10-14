@@ -1,0 +1,15 @@
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\imgui\imgui.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\imgui.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\imgui\imgui_demo.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\imgui_demo.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\imgui\imgui_draw.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\imgui_draw.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\imgui\imgui_impl_dx9.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\imgui_impl_dx9.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\imgui\imgui_impl_win32.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\imgui_impl_win32.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\imgui\imgui_tables.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\imgui_tables.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\imgui\imgui_widgets.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\imgui_widgets.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\minhook\buffer.c;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\buffer.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\minhook\hde\hde32.c;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\hde32.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\minhook\hde\hde64.c;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\hde64.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\minhook\hook.c;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\hook.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\ext\minhook\trampoline.c;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\trampoline.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\src\dllmain.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\dllmain.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\src\gui.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\gui.obj
+C:\Users\Nerostav\Desktop\INTERNAL_MENU\src\hooks.cpp;C:\Users\Nerostav\Desktop\INTERNAL_MENU\build\intermediates\hooks.obj

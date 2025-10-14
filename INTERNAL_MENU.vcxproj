@@ -168,6 +168,8 @@
   <ItemGroup>
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
+    <None Include="build\INTERNAL_MENU.dll" />
+    <None Include="build\INTERNAL_MENU.pdb" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>

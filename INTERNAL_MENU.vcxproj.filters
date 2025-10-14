@@ -121,6 +121,8 @@
     <None Include="README.md" />
     <None Include=".gitattributes" />
     <None Include=".gitignore" />
+    <None Include="build\INTERNAL_MENU.dll" />
+    <None Include="build\INTERNAL_MENU.pdb" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="LICENSE.txt" />

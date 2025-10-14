@@ -31,7 +31,7 @@
 #include <limits.h>
 
  //#include "../include/MinHook.h" // old path
-#include "../minhook/minhook.h"
+#include "minhook.h"
 #include "buffer.h"
 #include "trampoline.h"
 
