@@ -1,8 +1,16 @@
 ﻿/*
 *
-* My ImGui 
+* NK_ImGui - Nerostav Kuznetsov (ImGui Menu DXD9)
 * 
 * By: Nerostav "NERO" Kuznetsov
+* 
+* Criei um menu ImGui interno universal que funcionará para qualquer jogo DirectX9 e 
+* NUNCA! Ele funciona criando um .dll que, após precisará ser atualizado a injeção,
+* cria uma janela temporária sobre o jogo que usamos para obter o dispositivo DirectX9 do jogo.
+* Usando esse dispositivo, podemos conectar EndScene e Reset (duas funções importantes do DirectX)
+* com a biblioteca MinHook. Em seguida, configuramos o contexto ImGui e renderizamos nosso menu no EndScene.
+* Tudo isso está reunido em alguns arquivos com um manipulador de exceções e mecanismos perfeitos de descarregamento
+* de módulos. Espero que gostem!
 * 
 * [!] Este programa é um software livre: você pode redistribuí-lo e/ou modificá-lo como quiser.
 * 

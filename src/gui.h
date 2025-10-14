@@ -1,7 +1,7 @@
 #pragma once 
 #include <d3d9.h>
 
-namespace NK_ImGui // ( Nerostav Kuznetsov )
+namespace NK_ImGui // ( Nerostav Kuznetsov - ImGui )
 {
 	// Show menu? 
 	inline bool open = true;

@@ -26,10 +26,15 @@ IMGUI_IMPL_API bool     ImGui_ImplWin32_InitForOpenGL(void* hwnd);
 IMGUI_IMPL_API void     ImGui_ImplWin32_Shutdown();
 IMGUI_IMPL_API void     ImGui_ImplWin32_NewFrame();
 
-// Win32 message handler your application need to call.
+//   Win32 message handler your application need to call.
 // - Intentionally commented out in a '#if 0' block to avoid dragging dependencies on <windows.h> from this helper.
 // - You should COPY the line below into your .cpp code to forward declare the function and then you can call it.
 // - Call from your application's message handler. Keep calling your message handler unless this function returns TRUE.
+// Tradução por NEROSTAV:
+//   Manipulador de mensagens Win32 que sua aplicação precisa chamar.
+// - Intencionalmente comentado em um bloco '#if 0' para evitar arrastar dependências de <windows.h> para este auxiliar.
+// - Você deve COPIAR a linha abaixo para o seu código .cpp para declarar antecipadamente (forward-declare) a função e então poderá chamá-la.
+// - Chame a partir do manipulador de mensagens da sua aplicação. Continue chamando seu manipulador de mensagens a menos que esta função retorne TRUE.
 
 #if 0
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
